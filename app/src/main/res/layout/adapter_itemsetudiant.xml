@@ -3,24 +3,46 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:padding="15dp"
-    android:background="@color/teal_200"
+    android:background="@color/white"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/item_nom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        android:text="nometudiant"/>
-    <TextView
-        android:id="@+id/item_prenom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        android:text="prenometudiant "/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:layout_height="match_parent">
 
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/userpng" />
 
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/item_nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="nometudiant"/>
+            <TextView
+                android:id="@+id/item_prenom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="prenometudiant "/>
+
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
