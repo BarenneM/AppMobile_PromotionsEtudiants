@@ -52,9 +52,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        menu.add(0, 1, Menu.NONE, "Voir toutes les promotions");
-        menu.add(0, 2, Menu.NONE, "Voir tous les étudiants");
-        menu.add(0, 3, Menu.NONE, "Ajouter un étudiant");
+        menu.add(0, 1, Menu.NONE, "Accueil");
+        menu.add(0, 2, Menu.NONE, "Voir toutes les promotions");
+        menu.add(0, 3, Menu.NONE, "Voir tous les étudiants");
+        menu.add(0, 4, Menu.NONE, "Ajouter un étudiant");
         return true;
     }
 
@@ -64,6 +65,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int itemId = item.getItemId();
         Log.i(TAG, "itemId=" + itemId);
         if(itemId == 1){
+            return true;
+        }
+        else if(itemId == 2){
             Log.i(TAG, "Voir toutes les promotions");
             serviceRest.getPromotions().enqueue(new Callback<List<Promotion>>() {
                 @Override
@@ -86,11 +90,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             });
             return true;
         }
-        else if(itemId == 2) {
+        else if(itemId == 3) {
             Log.i(TAG, "Voir tous les étudiants");
             return true;
         }
-        else if(itemId == 3) {
+        else if(itemId == 4) {
             Log.i(TAG, "Ajouter un étudiant");
             Intent intent = new Intent(MainActivity.this, EtudiantActivity.class);
             startActivity(intent);
