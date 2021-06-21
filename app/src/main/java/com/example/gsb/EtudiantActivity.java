@@ -52,8 +52,7 @@ public class EtudiantActivity extends AppCompatActivity implements View.OnClickL
     public boolean onCreateOptionsMenu(Menu menu) {
         menu.add(0, 1, Menu.NONE, "Accueil");
         menu.add(0, 2, Menu.NONE, "Voir toutes les promotions");
-        menu.add(0, 3, Menu.NONE, "Voir tous les étudiants");
-        menu.add(0, 4, Menu.NONE, "Ajouter un étudiant");
+        menu.add(0, 3, Menu.NONE, "Ajouter un étudiant");
         return true;
     }
 
@@ -91,10 +90,6 @@ public class EtudiantActivity extends AppCompatActivity implements View.OnClickL
             return true;
         }
         else if(itemId == 3) {
-            Log.i(TAG, "Voir tous les étudiants");
-            return true;
-        }
-        else if(itemId == 4) {
             Log.i(TAG, "Ajouter un étudiant");
             return true;
         }

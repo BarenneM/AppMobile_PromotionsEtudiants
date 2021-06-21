@@ -27,6 +27,6 @@
         android:id="@+id/listEtudiant"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Liste etudiants" />
+        android:text="Liste de ses etudiants" />
 
 </LinearLayout>

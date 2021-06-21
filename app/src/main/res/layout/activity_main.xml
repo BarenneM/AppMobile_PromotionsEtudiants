@@ -9,6 +9,33 @@
     android:background="@color/teal_200"
     android:orientation="vertical" >
 
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/cap"
+        android:layout_gravity="center"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Groupe Ecole Pratique"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
     <Button
         android:id="@+id/submit"
         android:layout_width="match_parent"
@@ -21,5 +48,5 @@
         android:layout_height="wrap_content"
         android:text="Ajouter un étudiant" />
 
-
+    </LinearLayout>
 </LinearLayout>
